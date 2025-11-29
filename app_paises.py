@@ -40,7 +40,7 @@ def load_country_data_directly():
             return None
         
         # Carregar o primeiro arquivo CSV encontrado
-        file_path = os.path.join(path, csv_files[0])
+        file_path = os.path.join(path, csv_files[1])
         df = pd.read_csv(file_path)
         
         st.success(f"Dataset carregado com sucesso! {len(df)} países encontrados.")
@@ -330,3 +330,4 @@ st.markdown(
     "Dados carregados diretamente do Kaggle"
 
 )
+
