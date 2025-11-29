@@ -43,7 +43,7 @@ def load_country_data_directly():
         file_path = os.path.join(path, csv_files[0])
         df = pd.read_csv(file_path)
         
-        st.success(f"Dataset carregado com sucesso! {len(df.country.unique())} países encontrados.")
+        st.success(f"Dataset carregado com sucesso! {len(df)} países encontrados.")
         return df
         
     except Exception as e:
@@ -328,4 +328,5 @@ st.markdown(
     "Desenvolvido com Streamlit | "
     "Análise de Clusterização de Dados de Países | "
     "Dados carregados diretamente do Kaggle"
+
 )
